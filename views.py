@@ -3,4 +3,4 @@ from app import app, pages
 
 @app.route('/')
 def index():
-    return "Hello world!"
+    return render_template('index.html')
