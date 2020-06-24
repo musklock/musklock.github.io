@@ -7,40 +7,41 @@
   @include section_border;
   margin-bottom: 1.5rem;
 
-  h2 {
-    @include sans;
-    font-weight: 900;
-    font-size: 1.75rem;
-    letter-spacing: -.05rem;
-    margin: 0;
-  }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+   }
+
 }
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header { padding: 1px 10px; 
 
   .avatar {
-    width: 95px;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
     overflow: hidden;
-    @include border-radius(100px);
+    border-radius: 8px;
     margin: 0 auto;
     display: block;
   }
 
   .header-name {
-    @include sans;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
     font-size: 3rem;
-    font-weight: 900;
     text-align: center;
     letter-spacing: -.15rem;
-    line-height: 1;
     margin: 1rem 0 0;
+    // margin-top: 50%; //moves header to middle of the page   
+    
   }
 
   .header-contact-info {
-    @include sans;
     text-align: center;
   }
   .header-contact-info p a {
@@ -81,7 +82,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid #D4AF37;
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -92,25 +93,74 @@
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 0px;
   }
 
   .icon-link { display: inline-block;
 
     &:hover .icon path {
-      fill: #333;
+      fill: #D4AF37;
       @include transition(all .2s ease);
     }
+    
   }
 
   .icon {
-    height: 28px;
+    height: 50px;
+    width: 25px;
   }
+}
+
+/* The sidebar menu */
+.sidenav {
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  margin-top: 200px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 60px 25px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+  display: block;
+  font-family: 'Lora', serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #D4AF37;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  color:  #D4AF37;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  color:  #D4AF37;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 .contact-button {
   @include border-radius(3px);
-  background-color: #efefef;
+  background-color: #D4AF37;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -118,7 +168,7 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: #000000;
   line-height: 55px;
   @include transition(all .2s ease);
 
