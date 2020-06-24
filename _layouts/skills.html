@@ -1,17 +1,24 @@
+---
+layout: base
+---
+
 {% if site.resume_section_skills %}
       <!-- begin Skills -->
-      <section class="content-section">
+      <div class = main>
+        <section class="content-section">
 
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
+          <header class="section-header">
+            <h2>Skills</h2>
+          </header>
+          {% for skill in site.data.skills %}
+          <div class="resume-item">
+            <h4 class="resume-item-details">{{ skill.skill }}</h4>
+            <p class="resume-item-copy">{{ skill.description }}</p>
+          </div>
+          {% endfor %}
+  
+        </section>
+        <!-- end Skills -->
+        {% endif %}
+      </div>
+      

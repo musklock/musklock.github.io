@@ -4,7 +4,7 @@
 // util
 
 .section-header {
-  @include section_border;
+  // @include section_border;
   margin-bottom: 1.5rem;
 
    
@@ -14,6 +14,15 @@
     text-transform: uppercase;
    }
 
+   h2{
+     font-size: 100px;
+     color: #D4AF37;
+   }
+
+   h4{
+     margin-top: 500px
+   }
+
 }
 
 // page header styles
@@ -21,11 +30,23 @@
 .page-header { padding: 1px 10px; 
 
   .avatar {
-    width: 50%;
+    width: 100px;
     max-width: 50%;
     overflow: hidden;
     border-radius: 8px;
-    margin: 0 auto;
+    
+    display: block;
+  }
+
+  .logo {
+    position:fixed; 
+    top:0; 
+    left:0;
+    width: 100px;
+    max-width: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 2rem 2rem 2rem;
     display: block;
   }
 
@@ -37,9 +58,9 @@
     text-align: center;
     letter-spacing: -.15rem;
     margin: 1rem 0 0;
-    // margin-top: 50%; //moves header to middle of the page   
-    
+    text-decoration: none;    
   }
+ 
 
   .header-contact-info {
     text-align: center;
@@ -49,7 +70,7 @@
   }
 
   .title-bar {
-    @include section_border;
+    // @include section_border;
     margin-top: 2rem;
     padding: .4rem 0;
     @include clearfix;
@@ -85,6 +106,16 @@
   border-top: 2px solid #D4AF37;
   padding-top: .4rem;
 
+  position:fixed; 
+  top:130px; 
+  left:2.5rem;
+    // width: 100px;
+    // max-width: 50%;
+    // overflow: hidden;
+    // border-radius: 8px;
+    // margin: 1rem 1rem 1rem;
+    // display: block;
+
   @include media_larger_than_mobile {
     float: right;
     border-top: none;
@@ -117,15 +148,15 @@
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
+  left: 2rem;
   margin-top: 200px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 60px 25px;
+  padding: 6px 8px 60px 0px; //top right bottom left
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: #000000;
   display: block;
   font-family: 'Lora', serif;
@@ -148,8 +179,9 @@
 
 /* Style page content */
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
+  margin-left: 300px; /* Same as the width of the sidebar */
   padding: 0px 10px;
+  margin-top:100px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -189,9 +221,9 @@
 
   .resume-item-title {
     @include sans_bold;
-    margin: 0 0 .75rem;
+    margin: 0 0 1.75rem; // top left bottom
     font-size: 1.5rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -.01rem;
     line-height: 1;
   }
 
@@ -227,10 +259,13 @@
 // footer styles
 
 .page-footer {
-  border-top: 4px solid #c7c7c7;
+  border-top: 4px solid #D4AF37;
   padding-top: 1.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;height: 2.5rem;
 
   .footer-line {
     margin: 0;
@@ -258,7 +293,7 @@
     }
   }
   .section-header {
-    @include section_border_thin;
+    // @include section_border_thin;
     margin-bottom: 1rem;
     h2 { font-size: 1.2rem; line-height: 1.5rem; }
   }

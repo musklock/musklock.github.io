@@ -1,19 +1,26 @@
+---
+layout: base
+---
+
 {% if site.resume_section_organizations%}
       <!-- begin Organziations -->
-      <section class="content-section">
+      <div class= "main">
+        <section class="content-section">
 
-        <header class="section-header">
-          <h2>Organizations</h2>
-        </header>
-
-        {% for organization in site.data.organizations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if organization.url %}<a href="{{ organization.url }}">{{ organization.organization }}</a>{% else %}{{ organization.organization }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ organization.role }} &bull; {{ organization.year }}</h4>
-          <p class="resume-item-copy">{{ organization.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Organziations -->
-      {% endif %}
+          <header class="section-header">
+            <h2>Organizations</h2>
+          </header>
+  
+          {% for organization in site.data.organizations %}
+          <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+            <h3 class="resume-item-title" itemprop="name">{% if organization.url %}<a href="{{ organization.url }}">{{ organization.organization }}</a>{% else %}{{ organization.organization }}{% endif %}</h3>
+            <h4 class="resume-item-details" itemprop="description">{{ organization.role }} &bull; {{ organization.year }}</h4>
+            <p class="resume-item-copy">{{ organization.summary }}</p>
+          </div>
+          {% endfor %}
+  
+        </section>
+        <!-- end Organziations -->
+        {% endif %}
+      </div>
+      

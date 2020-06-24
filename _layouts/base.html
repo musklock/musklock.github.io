@@ -1,0 +1,38 @@
+<html>
+    <head>
+        {% include head.html %}
+        <div class="wrapper"></div>
+        <header class="page-header">
+          <pre><link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"></pre>
+          
+          <a href="#">
+            <img src="images/Logo.jpg" alt="my photo" class="logo" itemprop="image">
+          </a>
+          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
+          <div>
+            {% include icon-links.html %}
+          </div>
+
+          
+      </header>   
+    </head>
+    <body>        
+        <!-- Side navigation -->
+        <div class="sidenav">
+        <a href="education.html">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Interests</a>
+        <a href="#">Organizations</a>
+        <a href="#">Projects</a>
+        <a href="#">Recognitions</a>
+        
+      </div>
+      
+        {{content}}
+      <footer class="page-footer">
+            <p class="footer-line">Made by @musklock. </p>   
+      </footer>
+       
+    </body>
+      
+</html>
