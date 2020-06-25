@@ -278,7 +278,11 @@
     }
   }
 }
+@media screen and (max-width: 500){
+  .page-footer{display: none}
+}
 
+// end footer styles
 .print-only { display: none !important }
 
 @media print {
