@@ -6,7 +6,7 @@
         <header class="page-header">
           <pre><link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"></pre>
           
-          <a href="#">
+          <a href="{%link index.html %}">
             <img src="images/Logo.jpg" alt="my photo" class="logo" itemprop="image">
           </a>
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
@@ -21,12 +21,12 @@
       
         <!-- Side navigation -->
         <div class="sidenav">
-        <a href="education.html">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Interests</a>
-        <a href="#">Organizations</a>
-        <a href="#">Projects</a>
-        <a href="#">Recognitions</a>
+        <a href="{% link education.html %}">Education </a>
+        <a href="{% link experience.html %}">Experience</a>
+        <a href="{% link interests.html %}">Interests</a>
+        <a href="{% link organizations.html %}">Organizations</a>
+        <a href="{% link projects.html %}">Projects</a>
+        <a href="{% link recognitions.html %}">Recognitions</a>
         
       </div>
       
