@@ -47,9 +47,9 @@ resume_section_organizations:    true
 resume_social_links:
   resume_github_url:            "https://github.com/musklock"
   # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          ""
-  resume_dribble_url:           ""
-  resume_website_url:           ""
+  resume_linkedin_url:          "https://www.linkedin.com/in/muskaan-mendiratta/"
+  # resume_dribble_url:           ""
+  # resume_website_url:           ""
 resume_print_social_links:      true
 
 # Design settings
