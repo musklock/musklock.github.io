@@ -2,6 +2,14 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # 
+
+- project: STEM-Away
+  role: Technical Project Lead
+  duration: July 2020 (ongoing)
+  # url: "#"
+  description: 
+
+
 - project: Glass Ceiling
   role: Coded in Python 
   duration: June 2020 (ongoing)
@@ -18,6 +26,12 @@
 - project: Puffle Chase
   role: Created in Android Studio and coded in Kotlin
   duration: April 2020
+  # url: "#"
+  description: Created a game for tablets using MVVM design with 5 views implemented in fragments. Used Navigation component and SafeArgs to navigate between destinations. Implemented Animation Sets and used the SoundPool API to play game sounds. The user has to click the ‘good’ tiles avoiding the ‘bad’ tiles to win the game.
+
+- project: URBlog
+  role: Coded in Python Flask
+  duration: October 2019 - December 2019
   # url: "#"
   description: Created a game for tablets using MVVM design with 5 views implemented in fragments. Used Navigation component and SafeArgs to navigate between destinations. Implemented Animation Sets and used the SoundPool API to play game sounds. The user has to click the ‘good’ tiles avoiding the ‘bad’ tiles to win the game.
 
