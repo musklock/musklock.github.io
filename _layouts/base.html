@@ -17,26 +17,27 @@
           
       </header>   
     </head>
-    <body>   
-      
+    <body>      
+        
+ 
+      <div id="page-container">
+        <div class="wrapper" itemscope itemtype="http://schema.org/Person"></div>
         <!-- Side navigation -->
         <div class="sidenav">
-        <a href="{% link education.html %}">Education </a>
-        <a href="{% link experience.html %}">Experience</a>
-        <a href="{% link interests.html %}">Interests</a>
-        <a href="{% link organizations.html %}">Organizations</a>
-        <a href="{% link projects.html %}">Projects</a>
-        <a href="{% link recognitions.html %}">Recognitions</a>
-        
-      </div>
+          <a href="{% link education.html %}">Education </a>
+          <a href="{% link experience.html %}">Experience</a>
+          <a href="{% link organizations.html %}">Organizations</a>
+          <a href="{% link projects.html %}">Projects</a>
+          <a href="{% link recognitions.html %}">Recognitions</a>
+          </div>
+          {{content}}
+          
+              
+        </div>
+        {%- include footer.html -%} 
+      </div>  
       
-      <div class="wrapper" itemscope itemtype="http://schema.org/Person"></div>
-        {{content}}
-        
-      </div>
-      <footer class="page-footer">
-        <p class="footer-line">Made by @musklock. </p>   
-  </footer>
+      
       
        
     </body>

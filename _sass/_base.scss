@@ -8,11 +8,16 @@
 
 html {
   background: #fce1e0;
+  height: 100%;
 }
 
 body {
   font-family: 'Lora', serif;
+  margin: 0; 
+  height: 100%;
  }
+
+
  
  h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -28,6 +33,7 @@ body {
   padding: 0 24px;
   margin: 0 auto;
   zoom: 1;
+  position: relative;
 }
 
 // clearfix (now called group,

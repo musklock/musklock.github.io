@@ -1,16 +1,36 @@
-# # Projects
-# # uncomment the urls if you wish to display them, and add your own URL
+# Projects
+# uncomment the urls if you wish to display them, and add your own URL
 
-# # jazznotes.io
-# - project: jazznotes.io
-#   role: Founder & Primary Developer
-#   duration: 2012 &mdash; Present
-#   # url: "#"
-#   description: Jazz Notes is an open source node/ember app that helps you keep track of your music compositions and new ideas.
+# 
+- project: Glass Ceiling
+  role: Coded in Python 
+  duration: June 2020 (ongoing)
+  # url: "#"
+  description: Glass Ceiling description
 
-# # Springfield Community Outreach Group
-# - project: Springfield Community Outreach Group
-#   role: Co-Founder & Organizer
-#   duration: 2007 &mdash; Present
-#   # url: "#"
-#   description: SCOG is a local monthly meetup in Springfield where we share opportunities to volunteer in the community and organize support for families and neighborhoods in need of assistance that the community can provide.
+- project: Puffle Chase
+  role: Created in Android Studio and coded in Kotlin
+  duration: April 2020
+  # url: "#"
+  description: Created a game for tablets using MVVM design with 5 views implemented in fragments. Used Navigation component and SafeArgs to navigate between destinations. Implemented Animation Sets and used the SoundPool API to play game sounds. The user has to click the ‘good’ tiles avoiding the ‘bad’ tiles to win the game.
+
+
+- project: Puffle Chase
+  role: Created in Android Studio and coded in Kotlin
+  duration: April 2020
+  # url: "#"
+  description: Created a game for tablets using MVVM design with 5 views implemented in fragments. Used Navigation component and SafeArgs to navigate between destinations. Implemented Animation Sets and used the SoundPool API to play game sounds. The user has to click the ‘good’ tiles avoiding the ‘bad’ tiles to win the game.
+
+# 
+- project: Connect Four
+  role: Coded in Java
+  duration: October 2018
+  # url: "#"
+  description: Used state space search problem solving to implement a Connect Four playing AI agent on two boards, 3x3x3 and 6x7x4. Wrote classes for state, node, action and state space from scratch. For the smaller board, used MINIMAX algorithm. For the larger board with a much bigger computation tree, used an informed heuristic and alpha beta pruning on the MINIMAX algorithm as two faster methods for the computer player.
+  
+# 
+- project: Connect Four
+  role: Coded in Java
+  duration: October 2018
+  # url: "#"
+  description: Used state space search problem solving to implement a Connect Four playing AI agent on two boards, 3x3x3 and 6x7x4. Wrote classes for state, node, action and state space from scratch. For the smaller board, used MINIMAX algorithm. For the larger board with a much bigger computation tree, used an informed heuristic and alpha beta pruning on the MINIMAX algorithm as two faster methods for the computer player.
