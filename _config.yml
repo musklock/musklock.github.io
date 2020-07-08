@@ -20,8 +20,8 @@ resume_contact_email:           "mmendira@u.rochester.edu"
 resume_contact_telephone:       ""
 resume_contact_address:         ""
 
-resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
-display_header_contact_info:    "false"
+resume_header_contact_info:     ""
+display_header_contact_info:    ""
 
 resume_header_intro: "<p></p>"
 
