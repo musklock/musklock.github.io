@@ -3,32 +3,72 @@ layout: base
 permalink: /education
 ---
 {% if site.resume_section_education %}
-      <!-- begin Education -->
-    <div class = main>       
-      
-      <section class="content-section">
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
+<!-- begin Education -->
+<div class=main>
 
-        {% for education in site.data.education %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} </h4>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.year }}</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-          <p class="resume-item-copy" itemprop="description">
-            <ul class="resume-item-list">
-              {% for award in education.awards %}
-              <li>{{ award.award }}</li>
-              {% endfor %}
-            </ul></h5>
+  <section class="content-section">
+    <header class="section-header">
+      <h2>Education</h2>
+    </header>
 
-
-          <p class="resume-item-copy">{{ education.summary }}</p>
-        </div>
+    {% for education in site.data.education %}
+    <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+      <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+      <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} </h4>
+      <h4 class="resume-item-details group" itemprop="description">{{ education.year }}</h4>
+      <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+      <p class="resume-item-copy" itemprop="description">
+      <ul class="resume-item-list">
+        {% for award in education.awards %}
+        <li>{{ award.award }}</li>
         {% endfor %}
-      </section>
+      </ul>
+      </h5>
+
+
+      <p class="resume-item-copy">{{ education.summary }}</p>
     </div>
-      <!-- end Education -->
-      {% endif %}
+    {% endfor %}
+  </section>
+
+  <!-- end Education -->
+  {% endif %}
+
+  {% if site.resume_section_organizations%}
+  <!-- begin Organziations -->
+  <section class="content-section">
+    <header class="section-header">
+      <h3 class="resume-item-title" itemprop="name">Organizations</h3>
+    </header>
+    {% for organization in site.data.organizations %}
+    <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
+      <h3>{% if organization.url %}<a
+          href="{{ organization.url }}">{{ organization.organization }}</a>{% else %}{{ organization.organization }}{% endif %}
+      </h3>
+      <h4 class="resume-item-details" itemprop="description">{{ organization.role }} &bull; {{ organization.year }}</h4>
+      <p class="resume-item-copy">{{ organization.summary }}</p>
+    </div>
+    {% endfor %}
+  </section>
+  <!-- end Organziations -->
+  {% endif %}
+
+  {% if site.resume_section_recognition %}
+  <!-- begin Recognition -->
+  <section class="content-section">
+    <header class="section-header">
+      <h3 class="resume-item-title" itemprop="name">Coursework</h3>
+    </header>
+    {% for recognition in site.data.recognitions %}
+    <div class="resume-item">
+      <h3>{{ recognition.award }}</h3>
+      <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
+      <p class="resume-item-copy">{{ recognition.summary }}</p>
+    </div>
+    {% endfor %}
+
+  </section>
+  <!-- end Recognition -->
+  {% endif %}
+</div>
+

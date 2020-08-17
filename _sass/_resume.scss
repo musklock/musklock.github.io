@@ -7,7 +7,12 @@
 #page-container {
   position: relative;
   min-height: 90%;
-  z-index: -1;
+  z-index: 0;
+}
+
+#icon-container {
+  position: relative;
+  z-index: 1;
 }
 
 .section-header {
@@ -37,6 +42,7 @@
 
 h3{
   color: #D4AF37;
+  font-size: 20px;
 }
 
 h5{

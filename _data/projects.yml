@@ -2,18 +2,11 @@
 # uncomment the urls if you wish to display them, and add your own URL
 
 # 
-
-- project: STEM-Away
-  role: Technical Project Lead
-  duration: July 2020 (ongoing)
-  # url: "#"
-  description: 
-
-
+ 
 - project: Glass Ceiling
   role: Coded in Python 
   duration: June 2020 (ongoing)
-  # url: "#"
+  url: "#"
   description: Glass Ceiling description
 
 - project: Puffle Chase
