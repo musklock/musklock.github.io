@@ -1,44 +1,46 @@
 <html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% include head.html %}
-        <div class="wrapper"></div>
-        <header class="page-header">
-          <pre><link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"></pre>
-          
-          <a href="{% link index.html %}">
-            <img src="images/Logo.png" alt="logo" class="logo" itemprop="image">
-          </a>
-          <div id = "icon-container">
-            {% include icon-links.html %}
-          </div>
 
-          
-      </header>   
-    </head>
-    <body>   
-      <!-- Side navigation -->
-      <div class="sidenav">
-        <a href="{% link education.html %}">Education </a>
-        <a href="{% link experience.html %}">Experience</a>
-        <a href="{% link projects.html %}">Projects</a>
-        </div>   
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include head.html %}
+  <div id="icon-container">
+    <header class="page-header">
+      <pre><link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"></pre>
 
-        
- 
-      <div id="page-container">
-        <div class="wrapper" itemscope itemtype="http://schema.org/Person"></div>
-        
-          {{content}}
-          
-              
-        </div>
-        {%- include footer.html -%} 
-      </div>  
-      
-      
-      
-       
-    </body>
-      
+      <a href="{% link index.html %}">
+        <img src="images/Logo.png" alt="logo" class="logo" itemprop="image">
+      </a>
+
+      {% include icon-links.html %}
+  </div>
+
+
+  </header>
+</head>
+
+<body>
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <a href="{% link education.html %}">Education </a>
+    <a href="{% link experience.html %}">Experience</a>
+    <a href="{% link projects.html %}">Projects</a>
+  </div>
+
+
+
+  <div id="page-container">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person"></div>
+
+    {{content}}
+
+
+  </div>
+  {%- include footer.html -%}
+  </div>
+
+
+
+
+</body>
+
 </html>
