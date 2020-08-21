@@ -3,8 +3,7 @@
 - position: Summer Developer Analyst
   company: Barclays
   duration: July 2020 &mdash; Present
-  summary: 
-
+  summary: <ul class="resume-item-list"><li>Worked as a back-end developer on the web portal services team.</li> <li>Developed a caching solution for Barclays Live Web Portal. Built an Apache Ignite application that stores user profiles in cache. Created a Java entity using ORM and tested by populating cache using JPA in Spring Boot. </li></ul>
 # # 
 - position: Research Assistant
   company: University of Rochester, Professor Lenhart K. Schubert  
